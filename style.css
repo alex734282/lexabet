@@ -1,0 +1,560 @@
+body{
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/********* header **********/
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #182f3a;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 100px;
+    width: 200px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+}
+.logo_lexa{
+    max-width: 300px;
+    max-height: 200px;
+    padding-top: 20px;
+}
+.logo1 {
+    padding-top: 10px;
+    padding-left: 100px;
+    width: 200px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_lexa_baner {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.menu a {
+    display: inline-block;
+    color: #fff;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 0 20px;
+    background: rgba(0,0,0,.05);
+    line-height: 93px;
+    display: block;
+    width: 170px;
+    position: absolute;
+    right: 300px;
+    top: 0;
+}
+
+.menu1 a {
+    display: inline-block;
+    color: #fff;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 0 20px;
+    background: rgba(0,0,0,.05);
+    line-height: 93px;
+    display: block;
+    width: 100px;
+    position: absolute;
+    right: 160px;
+    top: 0;
+}
+
+.menu:hover a:hover, .menu1:hover a:hover{
+    background: rgba(0,0,0,.2);
+}
+
+.orenge_line {
+    background-color: #ffa200;
+    height: 2px;
+    width: 100%;
+    
+
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+   .menu-btn {
+	width: 20px;
+	height: 40px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    right: 90px;
+    top: 25px;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.menu3 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 33%;
+	height: 100%;
+	padding: 15px;
+   background: #1b3440;
+	transform: translateX(-200%);
+	transition: transform 0.5s; 
+    font-size: 25px;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+    
+}
+.nav {
+top: 50px;
+
+
+}
+
+.a {
+    padding-top:10px ;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+}
+
+#a {
+    padding-top: 50px;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+}
+
+.menu3.active {
+	transform: translateX(0);
+}
+
+.menu3 li {
+	list-style-type: none;
+}
+
+
+/* baner */
+
+.baner {
+    background: #195383;
+    background-image: repeating-linear-gradient(45deg,transparent,transparent 8px,rgba(0,0,0,.05) 0,rgba(0,0,0,.05) 10px);
+    padding: 80px 0;
+    height: 250px;
+    margin-top: 5.3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.stars {
+    color: white;
+}
+.active {
+    color: gold;
+    font-size: 26px;
+}
+
+.active1 {
+    color: #ccc;
+    font-size: 26px;
+}
+
+.bonus{
+    color: white;
+}
+
+.bonus > h1 {
+    font-size: 14px;
+}
+.bonus > h2 {
+    font-size: 50px;
+}
+
+.claim {
+    background: #3dbf1f;
+    border: 1px solid #3dbf1f;
+    color: #fff;
+    box-shadow: 0 1px 0 0 #fff, 0 4px 8px 0 rgb(0 0 0 / 10%);
+    display: inline-block;
+    font-family: proxima_nova_rgbold,Arial,Helvetica;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 300px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 14px;
+    box-shadow: none;
+    padding: 15px 60px;
+    line-height: 1.4em;
+    font-size: 22px;
+    text-align: center;
+}
+
+.page_menu {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.page_menu > ul > li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 18px;
+    font-size: 12px;
+}
+
+.page_menu > ul > li > a {
+    color: #827a73;
+}
+
+.page_menu > ul {
+    margin: 0;
+}
+
+.page_menu_h2 {
+font-family: proxima_novasemibold,Arial,Helvetica;
+font-size: 15px !important;
+color: #000;
+}
+/* container */
+
+.contaniner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+
+.overiew{
+    width: 770px;
+}
+
+.recommended {
+    width: 750px;
+    height: 220px;
+    display: flex;
+    justify-content:start;
+    background-color: #f3f3f3;
+    margin-top: 20px;
+}
+
+.img_block > img{
+    margin-top: 3px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+.img_block {
+    text-align: center;
+    padding: 20px;
+}
+
+.img_block > p{
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+.text_block > p {
+    font-family: proxima_novasemibold,Arial,Helvetica;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5c5c5c;
+}
+
+.text_block > h3 {
+    margin: 20px;
+}
+
+.question{
+    background: #f3f3f3;
+    padding: 15px;
+    width: 337px;
+    margin: 20px;
+}
+
+.facts_block {
+    background: #f3f3f3;
+    padding: 15px;
+    width: 337px;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+.facts_block > strong {
+    font-weight: 400;
+    font-family: proxima_nova_rgbold,Arial,Helvetica;
+}
+.facts > h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    z-index: 99;
+    color: #fff;
+    font-weight: 400;
+    padding: 7px 10px 4px 10px;
+    background: #ffa200;
+    display: inline-block;
+    font-family: proxima_nova_condensed_bold,Arial,Helvetica;
+    letter-spacing: 1.5px;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.facts > .orenge_line {
+    width: 367px;
+    margin: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.score_h2 > h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #282b2d;
+    padding: 0 15px 0 0;
+    background: #fff;
+    display: inline-block;
+    letter-spacing: 0;
+    font-family: proxima_nova_rgbold,Arial,Helvetica;
+}
+
+.score_h2 > .orenge_line {
+    height: 2px;
+    width: 100%;
+    background: #ffa200;
+    position: relative;
+    z-index: -1;
+    top: -22.5px;
+}
+
+.score_h2 {
+    margin-top: 25px;
+}
+
+.score_block{
+display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 20px;
+    width: 770px;
+}
+
+.score_block > .plase > ul > li {
+    background-size: 10px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    height: auto!important;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+.score_block > .plase > ul{
+    padding-left: 0;
+}
+.score_block > .minus > ul{
+    padding-left: 0;
+}
+
+.score_block > .minus > ul > li {
+    background-size: 10px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    height: auto!important;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table.review {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table.review tr.odd {
+    background: #f3f3f3;
+}
+
+table.review tr td {
+    padding: 0 10px;
+    font-family: proxima_novasemibold,Arial,Helvetica;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.review tr td.title span {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 38px;
+}
+
+table.review tr td.score1 {
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 15px;
+}
+
+.content_text {
+    width: 770px;
+}
+.content_text > p {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #555;
+}
+
+.div_button{
+    padding: 10xp 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.button {
+    background: #1fbba6;
+    border: 1px solid #1fbba6;
+    color: #fff;
+    box-shadow: 0 1px 0 0 #fff, 0 4px 8px 0 rgb(0 0 0 / 10%);
+    padding: 13px 33px;
+    font-size: 13px;
+    display: inline-block;
+    font-family: proxima_nova_rgbold,Arial,Helvetica;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.button:hover {
+    background: #14a491;
+    transition-duration: .1s;
+}
+
+/************* footer **************/
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background-color: #182f3a;
+    margin-top: 50px;
+    border-top: 5px solid #ffa200;
+}
+
+.container1 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+
+.logo_lexa_footer{
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.row1 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#row1 {
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-right: 1px solid rgba(255,255,255,.3);
+}
+
+#first_row{
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    
+}
+
+#two_row {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+/* @madia */
+
